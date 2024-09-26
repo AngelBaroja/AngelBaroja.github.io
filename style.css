@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    background-color: antiquewhite;
+}
+.header{
+    display: flex;
+    top: 0;
+    position: sticky;
+    background-color:white;
+    box-shadow: 1px 2px 12px rgb(59, 58, 58);
+    align-items: center;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+    justify-content: space-between;
+    z-index: 500    ;
+}
+.icono{
+    max-width: 50px;
+    margin-left: 59%;
+}
+.menu{
+    padding-left: 45px;
+    display: flex;
+    gap: 45px;
+}
+#texhotel{
+    margin-right: 15px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+.cuerpo{
+    display: flex;
+}
+.background{
+    max-width: 100%;
+    max-height: auto;
+}
