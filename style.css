@@ -2,6 +2,7 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 .header{
     display: flex;
@@ -14,6 +15,7 @@ body{
     justify-content: space-between;
     z-index: 500;
     flex: 1;
+    opacity: 0.8;
 }
 .icono{
     max-width: 50px;
@@ -28,12 +30,14 @@ body{
     font-weight: 300;
     font-style:normal;
     font-size: 1.2rem;
+    opacity: none;
 }
 .logo-texto {
     display: flex;
     align-items: center; 
     padding-right: 10%;
     gap: 4px;
+    opacity: none;
 }
 #texhotel{
     white-space: nowrap;     /* Evita que el texto haga salto de línea */
