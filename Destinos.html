@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Todo {
+            border-radius: 15px;
+            transition: box-shadow 1s ease, transform 1s ease;            
+        }
+    
+        .Todo:hover {
+            box-shadow: 5px 5px 15px black;            
+            border-radius: 15px;
+            transform: translateY(-2px);
+            /* Mueve el elemento 10px hacia arriba */
+            transition: box-shadow 1s ease, transform 1s ease;            
+        }
+
+        .Departamentos {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .parte1 {
+            width: 30%;
+            height: px;
+
+            & img {
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .parte2 {
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            width: 60%;
+
+            & .parte2_1 {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-left: 10px;
+                margin-bottom: -5px;
+
+                & div {
+                    display: flex;
+                    align-items: center;
+                    width: auto;
+                    height: auto;
+
+                    & img {
+                        margin-left: 170px;
+                    }
+
+                    & p {
+                        margin-left: 8px;
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            & .parte2_2 {
+                display: flex;
+                margin-left: 10px;
+
+                & #servicios {
+                    display: flex;
+                    margin-left: 30px;
+                    margin-top: 3px;
+                    border: 2px solid gray;
+                    border-radius: 20px;
+                }
+
+                & h3 {
+                    display: inline;
+                }
+            }
+            & p{
+                margin-left: 10px;
+                text-align: justify;
+                margin-right: 10px;
+            }
+        }
+
+        .parte3 {
+            border: 1px solid gray;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            width: 10%;                                 
+            
+            & div{              
+                display: flex;
+                justify-content: center;               
+                margin-bottom: 57px;              
+            }           
+        } 
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Alquiler en Villa Carlos Paz</h1>
+        <h3>Cordoba / Villa Carlos Paz </h3>
+    </div>
+    <div class="Todo">
+    <div class="Departamentos">
+        <div class="parte1">
+            <img src="./imagenes/o_of30_unidad_NV1KNASW.webp" alt="Un hotel">
+        </div>
+        <div class="parte2">
+            <div class="parte2_1">
+                <h2>Departamento AVIS - En pleno centro</h2>
+                <p>\ Villa Carlos Paz</p>
+                <div>
+                    <img src="./imagenes/rate.png" alt="Una estrella" width="30px" height="30px">
+                    <p>4,2</p>
+                </div>
+            </div>
+
+            <div class="parte2_2">
+                <h3>Sobre el alojamiento</h3>
+                <img id="servicios" src="./imagenes/Servicios.png" alt="Servicios" width="425px" height="50px">
+            </div>
+            <p>Departamentos premium a 30 metros de la peatonal! Internet Wifi, cochera cubierta, calefacción central
+                con radiadores y aire acondicionado individual en todos los ambientes. Servicio de limpieza y ropa
+                blanca incluido. Cocina equipada a full con lavarropas inclusive. Pileta, quincho con parrilla y
+                Gimnasio en la terraza. Nuestro edificio de departamentos le ofrece todas las comodidades para que
+                disfrute unas hermosas vacaciones en familia, con amigos, en un viaje de negocios o en una escapada de
+                fin de semana. Departamentos Avis se encuentra ubicado en pleno centro de la ciudad, a 30 metros de la
+                peatonal. Por su inmejorable ubicación y cercania al casino, galerías, bares, cines y teatros,
+                restaurantes, bancos, farmacias, agencias de turismo e incluso el Lago San Roque y la Iglesia central,
+                no necesitará mover su auto de la cochera ni preocuparse por dónde estacionar. Allí donde usted quiere
+                estar, cerca de todo... Los esperamos!</p>
+        </div>
+        <div class="parte3">
+            <div><h3>Desde:</h3></div>            
+            <div><h2>$ 74.000</h2></div>            
+        </div>
+    </div>
+    </div>
+
+    <div>
+        <h1>Alquiler en Mar del Plata</h1>
+        <h3>Buenos Aires / Mar del Plata </h3>
+    </div>
+    <div class="Todo">
+    <div class="Departamentos">
+        <div class="parte1">
+            <img src="./imagenes/je78-Departamento-99U3ZHNO.webp" alt="Un hotel">
+        </div>
+        <div class="parte2">
+            <div class="parte2_1">
+                <h2>Suite del Cabo</h2>
+                <p>\ Mar del Plata</p>
+                <div>
+                    <img src="./imagenes/rate.png" alt="Una estrella" width="30px" height="30px">
+                    <p>4,9</p>
+                </div>
+            </div>
+
+            <div class="parte2_2">
+                <h3>Sobre el alojamiento</h3>
+                <img id="servicios" src="./imagenes/servicios-MardelPlata.jpg" alt="Servicios" width="425px" height="50px">
+            </div>
+            <p>El departamento está ubicado en Cabo Corrientes, a 150 mts de Playa Varese. El entorno es la costa y las casas bajas de techos rojos rodeadas de jardines.
+                <br>
+                El alquiler incluye ropa blanca, vajilla, smart tv y dos sillas de playa de aluminio para que utilices durante la estadía. El edificio tiene un mini gimnasio en el.piso 10 y un sum con vistas 360 a la costa y la ciudad.
+                <br>
+                En Suite del Cabo vas a encontrar todo lo que necesitas, ya sea para una escapada, o para largas vacaciones.
+                <br>
+                No hospedo grupos de jóvenes. No se puede fumar dentro del departamento. Si, en el balcón.
+                <br>
+                <br>
+                <br>
+            </p>
+        </div>
+        <div class="parte3">
+            <div><h3>Desde:</h3></div>            
+            <div><h2>$ 52.000</h2></div>            
+        </div>
+    </div>
+    </div>
+
+    <div>
+        <h1>Alquiler en Ciudad de Buenos Aires</h1>
+        <h3>Buenos Aires / Capital Federal </h3>
+    </div>
+    <div class="Todo">
+    <div class="Departamentos">
+        <div class="parte1">
+            <img src="./imagenes/Ciudad-de-Buenos-Aires.webp" alt="Un hotel">
+        </div>
+        <div class="parte2">
+            <div class="parte2_1">
+                <h2>PALERMO HOLLYWOOD </h2>
+                <p>\ Buenos Aires - Capital Federal</p>
+                <div>
+                    <img src="./imagenes/rate.png" alt="Una estrella" width="30px" height="30px">
+                    <p>4,8</p>
+                </div>
+            </div>
+
+            <div class="parte2_2">
+                <h3>Sobre el alojamiento</h3>
+                <img id="servicios" src="./imagenes/Servicios.png" alt="Servicios" width="425px" height="50px">
+            </div>
+            <p>Studio de 35m2 con un espacioso balcón. Muy luminoso. Se ubica en el 2 piso, al contrafrente, con lo cual es muy silencioso..
+                <br>
+                Equipado con detalles muy cálidos y de categoría.
+                <br>
+                2 Sommiers que permiten la posibilidad de dos camas singles o  una cama Queen. Colchones nuevos, firmes.
+                Baño completo y kitchenete integrada.
+                <br>
+                En la esquina hay una de las mejores parrillas de Buenos Aires, LA DORITA. A la vuelta del departamento hay un estacionamiento (aunque se puede estacionar en la calle sin problema). 
+                <br>                
+            </p>
+        </div>
+        <div class="parte3">
+            <div><h3>Desde:</h3></div>            
+            <div><h2>$ 60.000</h2></div>            
+        </div>
+    </div>
+    </div>
+
+    <div>
+        <h1>Alquiler en San Carlos De Bariloche</h1>
+        <h3>Rio Negro / San Carlos De Bariloche </h3>
+    </div>
+    <div class="Todo">
+    <div class="Departamentos">
+        <div class="parte1">
+            <img src="./imagenes/Bariloche.webp" alt="Un hotel">
+        </div>
+        <div class="parte2">
+            <div class="parte2_1">
+                <h2>Cabaña luminosa</h2>
+                <p>\ Rio Negro - San Carlos De Bariloche</p>
+                <div>
+                    <img src="./imagenes/rate.png" alt="Una estrella" width="30px" height="30px">
+                    <p>4,8</p>
+                </div>
+            </div>
+
+            <div class="parte2_2">
+                <h3>Sobre el alojamiento</h3>
+                <img id="servicios" src="./imagenes/servicios-Bariloche.jpg" alt="Servicios" width="425px" height="50px">
+            </div>
+            <p>Acogedoras y cálidas cabaña con excelente ubicación en barrio tranquilo y seguro, a 2 cuadras del teleférico del cerro OttoA 100 mts de Av de los PionerosA 200 mts de autoservicio, heladería, cafetería y almacénA 600 mts de supermercado, lavadero,verdulería, carniceríaMedios de transporte público a 1 cuadra
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+        </div>
+        <div class="parte3">
+            <div><h3>Desde:</h3></div>            
+            <div><h2>$ 50.000</h2></div>            
+        </div>
+    </div>
+    </div>
+
+   
+
+</body>
+
+</html>
