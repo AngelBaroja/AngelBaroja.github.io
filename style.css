@@ -51,23 +51,82 @@ body{
     color: black;
     padding: 20px;
 }
-.cuerpo{
-    display: flex;
-    background-color: whitesmoke;
+.bg{
+    position: relative;
+    display: inline-block;
 }
-.background{
-    max-width: 100%;
+.bg img{
+    display: block;
+    width: 100%;
     height: auto;
-    opacity: 0.8;
     box-shadow: 0 5px 9px;
+    filter:blur(4px);
+}
+.bg h2{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    opacity: 0;
+    animation: fade 3s ease-in-out forwards;
+    line-height: 1.2;
+    text-shadow: 1px 1px 1px black;
+}
+.bg h2 .line1 {
+    font-size: 60px;
+}
+
+.bg h2 .line2 {
+    font-size: 30px;  /* Ajusta el tamaño de la segunda línea si es necesario */
+}
+.bg h2 .line3{
+    font-size: 30px;
+    animation: fadeInOut 3s ease-in-out infinite;
+    color: #7f1e47;
+    font-weight: 800;
+    text-decoration-line: underline;
+    
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
 }
 .textomain{
     display: flex;
-    padding-left: 25%;
     flex-direction: column;
+    justify-content: center;
     width: 50%;
-    height: 50%;
+    margin: 0 auto;
     text-align: justify;
+    margin-top: 6%;
+    border: 2px groove black;
+    border-radius: 15px;
+    box-shadow: 0 3px 9px;
+    opacity: 0.85;
+    padding: 20px;
 }
 .textomain h4{
     text-align: center;
@@ -75,6 +134,8 @@ body{
     font-weight: 500;
     font-style: normal;
     font-size: 2.5rem; 
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .textomain p{
     text-align: center;
@@ -82,4 +143,125 @@ body{
     font-weight: 400;
     font-size: 1.2rem;
     font-style: italic;
+    padding-bottom: 25px;
 }
+.textdestinos{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5.5%;
+    margin-top: 35px;
+}
+.textdestinos h2{
+    font-family:"Plus Jakarta Sans", sans-serif;
+    font-size: 40px;
+    font-weight:500;
+}
+.destinosmain{
+    display: flex;
+    flex-wrap: wrap;
+    gap 20px
+    overflow: hidden;
+    justify-content: space-between;
+    position: relative;
+    margin: 5%;
+    margin-top:15px;
+    margin-bottom:15px ;
+}
+.destinosmain a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+    align-items: center;
+}
+.destinosmain img{
+    object-fit: cover;        /* Asegura que la imagen se ajuste sin distorsionarse */
+    transition: transform 0.5s ease-in-out;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.destinosmain img:hover{
+    transform: scale(1.1);
+}
+.destinosmain p{
+    text-align: center;
+    font-family:"Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size:0.52cm;
+}
+#contCarrousel{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 500px;
+    margin-bottom: 20px;
+}
+.textCarrousel{
+    background-color:#d0e0eb;
+    opacity: 0.8;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    margin: 20px;
+    margin-top: 10px;
+}
+.textCarrousel h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+#carrousel{
+    position: relative;
+    width: 100%;
+}
+#carrousel img{
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 1px 7px 1.5px darkcyan;
+    transition: all 1s ease-in-out;
+    position: relative;
+    z-index: -1;
+}
+#carrousel::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;  /* Para que coincida con la imagen */
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.7), transparent);
+    transition: opacity 1s ease-in-out;  /* Transición suave de la opacidad */
+    opacity: 1;  /* La máscara está visible inicialmente */
+    z-index: 2;  /* Para que la máscara esté sobre la imagen */
+}
+#carrousel:hover::before {
+    opacity: 0;                        /* Al hacer hover, la máscara desaparece lentamente */
+}
+.atras, .adelante{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    z-index: 10;  
+}
+.adelante{
+    right: 10px;
+}
+.atras{
+    left: 10px;
+}
+
