@@ -90,8 +90,7 @@ body{
     animation: fadeInOut 3s ease-in-out infinite;
     color: #7f1e47;
     font-weight: 800;
-    text-decoration-line: underline;
-    
+    text-decoration-line: underline;    
 }
 
 @keyframes fade {
@@ -127,6 +126,7 @@ body{
     box-shadow: 0 3px 9px;
     opacity: 0.85;
     padding: 20px;
+    background: linear-gradient(180deg, #cbac69, #f1d084);
 }
 .textomain h4{
     text-align: center;
@@ -243,7 +243,7 @@ body{
     z-index: 2;  /* Para que la máscara esté sobre la imagen */
 }
 #carrousel:hover::before {
-    opacity: 0;                        /* Al hacer hover, la máscara desaparece lentamente */
+    opacity: 0; /* Al hacer hover, la máscara desaparece lentamente */
 }
 .atras, .adelante{
     position: absolute;
