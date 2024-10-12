@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+    <section class="header">
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="Destinos.html">Destinos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="logo-texto">
+            <img src="images/iconohotel.jfif" alt="ICONOHOTEL" class="icono">
+            <p id="texhotel">hoteles argentinos</p>
+        </div>
+    </section>
+    <section id="maincontacto">
+        <div class="row">
+            <h2>Contactate con nosotros!</h2>
+        </div>
+        <div class="row contacto-content">
+            <div class="contactoimg">
+                <img src="images/icono-contacto.svg" alt="Imagen">
+            </div>
+            <div class="formulariocontacto">
+                <form name="formulario" action="" novalidate onsubmit="return validar()">
+                    <input id="nombre" class="formularioItem" name="name" type="text" placeholder="Nombre y Apellido *" autofocus>
+                    
+                    <input id="telefono" class="formularioItem" name="cel" type="tel" placeholder="Telefono *">
+
+                    <input id="email" class="formularioItem" name="mail" type="email" placeholder="Correo Electronico">
+
+                    <input id="localidad" class="formularioItem" name="local" type="text" placeholder="Localidad">
+
+                    <textarea maxlength="350" class="formularioItem" name="msj" id="mensaje" placeholder="Mensaje *"></textarea>
+
+                    <button class="btnenviar">Enviar</button>
+                </form>
+                <div id="resultado"><h2></h2></div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+
+    </section>
+</body>
+</html>
