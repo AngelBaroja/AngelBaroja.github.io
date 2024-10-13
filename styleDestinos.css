@@ -6,7 +6,7 @@ body {
 .Todo {
     border-radius: 15px;
     transition: box-shadow 1s ease, transform 1s ease;
-
+    
 }
 
 .Todo:hover {

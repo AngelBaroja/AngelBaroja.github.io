@@ -230,7 +230,7 @@
             
             let medioComunicacion = false;
             let numeroTelefonico = /^\d{10}$/;
-            if (telefono.value !== "") {
+            if (telefono.value == "") {
                 if (!numeroTelefonico.test(telefono.value)) {
                     crearMensajeError(telefono, "El número de teléfono es incorrecto");
                     invalidado = true;
@@ -250,7 +250,6 @@
                 }
             }
 
-            
             if (!invalidado && medioComunicacion) {                
                 let div = document.getElementById("infoCliente");
                 if (div) {
@@ -261,7 +260,7 @@
                 resultado.className = "resultado";
                 resultado.id ="infoCliente"
                 if (email.value == "") {
-                    resultado.appendChild(document.createTextNode("Cliente: " + usuario.value + " / DNI: " + dni.value + " / Telefono: " + telefono.value));
+                    resultado.appendChild(document.createTextNode("Cliente: " + usuario.value + " / DNI: " + dni.value + " / Telefono: " + telefono.value + "Pronto nos comunicaremos contigo"));
                 } else if (telefono.value == "") {
                     resultado.appendChild(document.createTextNode("Cliente: " + usuario.value + " / DNI: " + dni.value + " / Email: " + email.value));
                 } else {
