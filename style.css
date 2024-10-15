@@ -280,11 +280,14 @@ body{
     display: block;
     margin: 8px;
     font-family: "Roboto";
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .Todo {
     border-radius: 15px;
     transition: box-shadow 1s ease, transform 1s ease;
-    
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .Todo:hover {
@@ -467,9 +470,9 @@ background: linear-gradient(180deg, #cbac69, #f1d084); /* Fondo degradado */
 }
 
 #destino3 {
-    position: absolute;
+   position: absolute;
     z-index: 102;
-    top: 950px;
+    top: 950px;   
 }
 
 /*-------- CONTACTO -------*/
@@ -483,7 +486,7 @@ background: linear-gradient(180deg, #cbac69, #f1d084); /* Fondo degradado */
     text-align: center;
     margin-bottom: 10px;
 }
-.row h2{
+.row h2,#info{
     font-family: "Plus Jakarta Sans";
     font-weight: 600;
     font-size: 35px;
@@ -513,6 +516,20 @@ background: linear-gradient(180deg, #cbac69, #f1d084); /* Fondo degradado */
     100% {
         transform: scaleX(1);
     }
+}
+#debajoFormulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#info{
+    display: flex;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-bottom: 4px solid #007BFF;
+    width: auto; 
+
 }
 
 .contacto-content {
@@ -591,15 +608,16 @@ button:hover{
 .error{
     text-align: left;
     font-weight: 700;
-    height: auto;
-    margin-bottom: px;
-    margin-top: -8px;
+    height: auto;   
+    margin-top: -6px;
     color: red;
-    font-size: 15px;     
+    font-size: 17px;     
 }
 #infoCliente{
-    font-size: 20px;
+    text-align: center;
+    font-size: 25px;
     font-weight: 700;
     margin-top: -15px;
+    margin-bottom: 40px;
 }
 

@@ -34,7 +34,7 @@
                 <form name="formulario" action="" novalidate onsubmit="return validar()">
                     <input id="nombre" class="formularioItem" name="name" type="text" placeholder="Nombre y Apellido *" autofocus>
                     
-                    <input id="telefono" class="formularioItem" name="cel" type="tel" placeholder="Telefono * ">
+                    <input id="telefono" class="formularioItem" name="cel" type="tel" placeholder="Telefono * (Ej:2657507673) ">
 
                     <input id="email" class="formularioItem" name="mail" type="email" placeholder="Correo Electronico">
 
@@ -43,15 +43,17 @@
                     <textarea maxlength="350" class="formularioItem" name="msj" id="mensaje" placeholder="Mensaje *"></textarea>
 
                     <button class="btnenviar">Enviar</button>
-                </form>
-                <h2 style="display: none;" id="info">Info. Cliente</h2>
-                <div id="resultado"></div>
+                </form>              
             </div>
         </div>
     </section>
+    <div id="debajoFormulario">
+        <h2 style="display: none;" id="info">Informacion del Cliente</h2>
+        <div id="resultado"></div>   
+    </div>
     <section class="footer">
         
     </section>
-    <script src="script.js"></script>
+    <script src="scriptContacto.js"></script>
 </body>
 </html>
