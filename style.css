@@ -276,7 +276,7 @@ body{
 
       /* DESTINOS */
 
-#fifa{
+#cuerpoPagina{
     display: block;
     margin: 8px;
     font-family: "Roboto";
@@ -286,8 +286,6 @@ body{
 .Todo {
     border-radius: 15px;
     transition: box-shadow 1s ease, transform 1s ease;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .Todo:hover {
