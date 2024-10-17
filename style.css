@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-color: #eae5d4;
@@ -234,9 +235,16 @@ body{
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0px 1px 7px 1.5px darkcyan;
-    transition: all 1s ease-in-out;
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
     position: relative;
     z-index: -1;
+    opacity: 0;
+    transform: scale(1.1);
+
+}
+#carrousel img.active {
+    opacity: 1;
+    transform: scale(1); /* Se acerca a su tamaño original */
 }
 #carrousel::before{
     content: "";
@@ -618,4 +626,125 @@ button:hover{
     margin-top: -15px;
     margin-bottom: 40px;
 }
+
+
+/* FOOTER */
+
+.footer{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #1f1f1f;
+    border-top: 2px white;
+    justify-content: space-between;
+    font-family: "Roboto";
+    margin-top: 50px;
+}
+.hotelfooter{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items:start;
+    margin-left: 15%;
+}
+.hotelfooter li{
+    list-style-type: none;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    color: white;
+    font-size: 22px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.hotelfooter a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+}
+.politicas{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+}
+.politicas li{
+    list-style-type: none;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    color: white;
+    font-size: 22px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.politicas a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items:start;
+}
+.redes li{
+    list-style-type: none;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+.redes a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+.redes a img{
+    vertical-align:middle;
+    margin: 5px;
+}
+.apps{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items:center;
+    margin-right: 15%;
+}
+.apps li{
+    list-style-type: none;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.footer a{
+    border-radius: 10px;
+    transition: all 0.5s;
+    margin: 5px;
+}
+.footer a:hover{
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    opacity: 0.9;
+}
+.apps a{
+    margin: 20px;
+    display: flex;
+}
+.apps a:hover{
+    transform: scale(1.1);
+    background-color: transparent;
+}
+
+
+
 
